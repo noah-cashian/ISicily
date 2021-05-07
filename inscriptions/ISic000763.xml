@@ -34,7 +34,11 @@
      	       <name xml:id="SS" ref="https://orcid.org/0000-0003-3914-9569">Simona Stoyanova</name>
      	       <resp>standardisation of template and tidying up encoding</resp>
  	   </respStmt>
-	    <respStmt>
+                <respStmt>
+                    <name xml:id="NCash" ref="https://orcid.org/0000-0002-8767-3368">Noah Cashian</name>
+                    <resp>editing the inscription and providing a translation</resp>
+                </respStmt>
+                <respStmt>
                     <name xml:id="system">system</name>
                     <resp>automated or batch processes</resp>
                 </respStmt>
@@ -170,7 +174,8 @@
 		<change when="2020-11-26" who="#SS">Simona Stoyanova restructured bibliography</change>
 	    <change when="2020-12-22" who="#system">Updated Zenodo DOI</change>
             	<change when="2021-01-19" who="#SS">renumbered files, uris and references</change>
-	</listChange>
+                <change when="2021-04-30" who="#NCash">Noah Cashian began writing the inscription and attempting a translation</change>
+            </listChange>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -191,11 +196,25 @@
     </facsimile>
     <text>
         <body>
-            <div type="apparatus">
-                <p><!--external apparatus criticus (if applicable)--></p>
+             <div type="edition" xml:space="preserve" xml:lang="la" resp="#NCash">
+                <ab>
+                    <lb n="1"/><g type="crux"/> hic requies
+                    <lb n="2" break="no"/>cit in pace Libe
+                    <lb n="3" break="no"/>rata <expan><abbr>q</abbr><ex>uae</ex></expan> vixit <expan><abbr>an</abbr><ex>nis</ex></expan>
+                    <lb n="4"/><num value="17">XVII</num> <expan><abbr>d</abbr><ex>eposita</ex></expan> sub <expan><abbr>d</abbr><ex>ie</ex></expan> <num value="10">X</num> <expan><abbr>kal</abbr><ex>endas</ex></expan>
+                    <lb n="5"/>Iunias <expan><abbr>indic</abbr><ex>tione</ex></expan> <num value="10">X</num> 
+                    <lb n="6"/><gap reason="lost" quantity="1" unit="line"/> 
+                    <lb n="7"/><g type="crux"/> requievit in 
+                    <lb n="8"/> pace Victori
+                    <lb n="9" break="no"/>a <expan><abbr>q</abbr><ex>uae</ex></expan> vixit <expan><abbr>an</abbr><ex>nis</ex></expan> 
+                    <lb n="10"/><num value="19">XVIIII</num> <expan><abbr>d</abbr><ex>eposita</ex></expan> <num value="4">IIII</num> <expan><abbr>id</abbr><ex>as</ex></expan> 
+                    <lb n="11"/>Maias <expan><abbr>indic</abbr><ex>tione</ex></expan> <num value="10">X</num> 
+                </ab>
             </div>
-            <div type="translation">
-                <p><!--translation(s) - add @xml:lang for 'en' or 'it' to div--></p>
+            <div type="apparatus">
+            </div>
+            <div type="translation" resp="#NCash">
+                <p>Here lies in peace Liberata, who lived for seventeen years, (and) was placed below on the tenth day of the Kalends of June, in the tenth indiction... Here rests in peace Victoria, who lived for nineteen years and was placed (here) on the fourth Ides of May, in the tenth indiction.</p>
             </div>
             <div type="commentary">
                 <p><!--commented out pending revision-->

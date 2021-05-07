@@ -30,6 +30,10 @@
                     <name xml:id="MM">Michael Metcalfe</name>
                     <resp>museum data collection</resp>
                 </respStmt>
+                <respStmt>
+                    <name xml:id="NCash" ref="https://orcid.org/0000-0002-8767-3368">Noah Cashian</name>
+                    <resp>editing the inscription and providing a translation</resp>
+                </respStmt>
 	    <respStmt>
      	       <name xml:id="SS" ref="https://orcid.org/0000-0003-3914-9569">Simona Stoyanova</name>
      	       <resp>standardisation of template and tidying up encoding</resp>
@@ -170,13 +174,13 @@
 		<change when="2020-11-26" who="#SS">Simona Stoyanova restructured bibliography</change>
 	    <change when="2020-12-22" who="#system">Updated Zenodo DOI</change>
             	<change when="2021-01-19" who="#SS">renumbered files, uris and references</change>
-	</listChange>
+                <change when="2021-04-30" who="#NCash">Noah Cashian began editing the inscription and translation</change>
+            </listChange>
         </revisionDesc>
     </teiHeader>
     <facsimile>
         <surface/>
         <!--delete empty surface above and uncomment template below if needed-->
-        <!--
   <surface type="front">
     <graphic n="screen" url="{concat('ISic', $num, '_tiled.tif')}"
       height="4912px" width="7360px">
@@ -186,78 +190,24 @@
       <desc>Add Description Here</desc>
     </graphic>
   </surface>
-
-    -->
     </facsimile>
     <text>
         <body>
-            <div type="edition" xml:space="preserve" subtype="EDR" n="EDR141210" xml:lang="la">
+            <div type="edition" xml:space="preserve" xml:lang="la" resp="#NCash">
                 <ab>
-                    <lb n="1"/>
-                    Crescentiae bene m<supplied reason="lost">e</supplied>renti<lb n="2"/>in pace,
-                    <choice>
-                        <sic>que</sic>
-                        <corr>quae</corr>
-                    </choice>
-                    vixit
-                    <expan>
-                        <abbr>ann</abbr>
-                        <ex>is</ex>
-                    </expan>
-                    <lb n="3"/>
-                    <expan>
-                        <abbr>p</abbr>
-                        <ex>lus</ex>
-                    </expan>
-                    m
-                    <expan>
-                        <ex>i</ex>
-                        <abbr>n</abbr>
-                        <ex>us</ex>
-                    </expan>
-                    L,
-                    <expan>
-                        <abbr>deposit</abbr>
-                        <ex>a</ex>
-                    </expan>
-                    III
-                    <expan>
-                        <abbr>Kal</abbr>
-                        <ex>endas</ex>
-                    </expan>
-                    <lb n="4"/>
-                    <expan>
-                        <abbr>Decemb</abbr>
-                        <ex>res</ex>
-                    </expan>
-                    <supplied reason="lost">
-                        <expan>
-                            <abbr>l</abbr>
-                            <ex>avio</ex>
-                        </expan>
-                    </supplied>
-                    O<supplied reason="lost">p</supplied>i<supplied reason="lost">li</supplied>o<lb n="5" break="no"/>ne
-                    <expan>
-                        <abbr>cons</abbr>
-                        <ex>ule</ex>
-                    </expan>
-                    , se vivi conpa
-                    <supplied reason="lost">ra</supplied>
-                    <lb n="6" break="no"/>
-                    <supplied reason="lost">v</supplied>er<supplied reason="lost">u</supplied>n
-                    <supplied reason="lost">t</supplied>
-                    <expan>
-                        <ex>comparaverunt</ex>
-                    </expan>
-                    .
+                    <lb n="1"/>Crescentiae benem<supplied reason="lost">e</supplied>renti
+                    <lb n="2"/>in pace <choice><sic>que</sic><corr>quae</corr></choice> vixit <expan><abbr>ann</abbr><ex>is</ex></expan>
+                    <lb n="3"/><expan><abbr>p</abbr><ex>lus</ex></expan> m<expan><ex>i</ex><abbr>n</abbr><ex>us</ex></expan> <num value="50">L</num> <expan><abbr>deposit</abbr><ex>a</ex></expan> <num value="3">III</num> <expan><abbr>Kal</abbr><ex>endas</ex></expan>
+                    <lb n="4"/><expan><abbr>Decemb</abbr><ex>res</ex></expan> <supplied reason="lost" cert="low"><expan><abbr>Fl</abbr><ex>avio</ex></expan></supplied> O<supplied reason="lost">p</supplied>i<supplied reason="lost">li</supplied>o
+                    <lb n="5" break="no"/>ne <expan><abbr>cons</abbr><ex>ule</ex></expan> se vivi conpa<supplied reason="lost">ra</supplied>
+                    <lb n="6" break="no"/><supplied reason="lost">v</supplied>er<supplied reason="lost">u</supplied>n<supplied reason="lost">t</supplied>
                 </ab>
-                <!--This EDR text 141210 originally came via the Europeana EAGLE project, http://www.eagle-network.eu/-->
             </div>
             <div type="apparatus">
-                <p><!--external apparatus criticus (if applicable)--></p>
+                <listApp><app><note>Text of CIL</note></app></listApp>
             </div>
-            <div type="translation">
-                <p><!--translation(s) - add @xml:lang for 'en' or 'it' to div--></p>
+            <div type="translation" xml:lang="eng" resp="#NCash">
+                <p>For the well-deserving Crescentia, who lived in peace for more or less fifty years, and was laid [here] on the third Kalends of December by the consul Flavius Opilio; they coupled themselves to live [together in marriage]<!--I get the sense of 'se vivi conparaverunt' but wasn't sure whether to make the translation literal or more intelligible--></p>
             </div>
             <div type="commentary">
                 <p><!--commented out pending revision-->

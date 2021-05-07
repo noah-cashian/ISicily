@@ -34,7 +34,11 @@
      	       <name xml:id="SS" ref="https://orcid.org/0000-0003-3914-9569">Simona Stoyanova</name>
      	       <resp>standardisation of template and tidying up encoding</resp>
  	   </respStmt>
-	    <respStmt>
+                <respStmt>
+                    <name xml:id="NCash" ref="https://orcid.org/0000-0002-8767-3368">Noah Cashian</name>
+                    <resp>editing the inscription and providing a translation</resp>
+                </respStmt>
+                <respStmt>
                     <name xml:id="system">system</name>
                     <resp>automated or batch processes</resp>
                 </respStmt>
@@ -169,7 +173,8 @@
 		<change when="2020-11-26" who="#SS">Simona Stoyanova restructured bibliography</change>
 	    <change when="2020-12-22" who="#system">Updated Zenodo DOI</change>
             	<change when="2021-01-19" who="#SS">renumbered files, uris and references</change>
-	</listChange>
+                <change when="2021-04-30" who="#NCash">Noah Cashian began editing the inscription and translation</change>
+            </listChange>
         </revisionDesc>
     </teiHeader>
     <facsimile>
@@ -187,56 +192,25 @@
   </surface>
 
     -->
+        
     </facsimile>
     <text>
         <body>
-            <div type="edition" xml:space="preserve" subtype="EDR" n="EDR141134" xml:lang="la">
+            <div type="edition" xml:space="preserve" xml:lang="la" resp="#NCash">
                 <ab>
-                    <lb n="1"/>
-                    <expan>
-                        <abbr>T</abbr>
-                        <ex>itus</ex>
-                    </expan>
-                    Ani
-                    <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="2"/>
-                    <expan>
-                        <abbr>T</abbr>
-                        <ex>itus</ex>
-                    </expan>
-                    Aelius
-                    <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="3"/>
-                    <expan>
-                        <abbr>C</abbr>
-                        <ex>aius</ex>
-                    </expan>
-                    Iulius Dio
-                    <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="4"/>
-                    <expan>
-                        <abbr>Ti</abbr>
-                        <ex>berius</ex>
-                    </expan>
-                    Claudius Ce
-                    <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="5"/>
-                    <expan>
-                        <abbr>C</abbr>
-                        <ex>aius</ex>
-                    </expan>
-                    Iulius Pr
-                    <gap reason="lost" extent="unknown" unit="character"/>
-                    <lb n="6"/>PAISV
-                    <gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="1"/><expan><abbr>T</abbr><ex>itus</ex></expan> <g ref="#interpunct">·</g> Ani<gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="2"/><expan><abbr>T</abbr><ex>itus</ex></expan> <g ref="#interpunct">·</g> Aelius<gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="3"/><expan><abbr>C</abbr><ex>aius</ex></expan> <g ref="#interpunct">·</g> Iulius <g ref="#interpunct">·</g> Dio<gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="4"/><expan><abbr>Ti</abbr><ex>berius</ex></expan> <g ref="#interpunct">·</g> Claudius <g ref="#interpunct">·</g> Cr<gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="5"/><expan><abbr>C</abbr><ex>aius</ex></expan> <g ref="#interpunct">·</g> Iulius <g ref="#interpunct">·</g> Pr<gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="6"/>PAISV<gap reason="lost" extent="unknown" unit="character"/>
                 </ab>
-                <!--This EDR text 141134 originally came via the Europeana EAGLE project, http://www.eagle-network.eu/-->
             </div>
             <div type="apparatus">
-                <p><!--external apparatus criticus (if applicable)--></p>
+                <listApp><app><note>Text of CIL</note></app></listApp>
             </div>
-            <div type="translation">
-                <p><!--translation(s) - add @xml:lang for 'en' or 'it' to div--></p>
+            <div type="translation" xml:lang="eng" resp="#NCash"> 
+                <p>Titus Ani... Titus Aelius... Caius Iulius Dio... Tiberius Claudius Cr... Caius Iulius Pr... PAISU</p>
             </div>
             <div type="commentary">
                 <p><!--commented out pending revision-->
