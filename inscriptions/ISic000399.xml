@@ -116,7 +116,7 @@
                             	<geo>37.49223, 15.07041</geo>
 		</origPlace>
                             <origDate datingMethod="#julian" notBefore-custom="0300" notAfter-custom="0600" cert="low">Christian
-                                (C4 AD - C6 AD (?))</origDate>
+                                (4 — 6th century CE (?))</origDate>
                         </origin>
                         <provenance type="found">Original discovery not recorded.</provenance>
                         <provenance type="observed" subtype="autopsied">None</provenance>
@@ -126,7 +126,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-             <p>Encoded following EpiDoc guidelines 9.2</p>
+             <p>Encoded following the latest EpiDoc guidelines</p>
              <xi:include href="../alists/ISicily-taxonomies.xml">
                  <xi:fallback>
                      <p>Taxonomies for ISicily controlled values</p>
@@ -198,8 +198,8 @@
                 <ab>
                     <lb n="1"/><supplied reason="lost">q</supplied>uiescu<supplied reason="lost">nt</supplied>
                     <lb n="2"/>annos
-                    <lb n="3"/><orig>A</orig> <num value="2">II<num> <g ref="#interpunct">·</g> et <orig>A</orig>
-			<lb n="4"/><orig>ST</orig> <g ref="#interpunct">·</g> <num value="20">XX</num>
+                    <lb n="3"/><orig>A</orig> <num value="2">II</num> <g ref="#interpunct">·</g> et <orig>A</orig>
+	   <lb n="4"/><orig>ST</orig> <g ref="#interpunct">·</g> <num value="20">XX</num>
                 </ab>
             </div>
             <div type="translation" xml:lang="en">
